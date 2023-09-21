@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ropalandia</title>
+    <link rel="icon" type="x-icon" href="imagenesproy/logo.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <header>
+    <nav>
+      <a href="/index.html" class="logo">Ropalandia</a>
+      <ul class="navlist-mid">
+        <li><a href="/productos.html">Ver Productos</a></li>
+        <li>
+          <a href="#categorias">
+            Categorías
+            <i class="bx bx-chevron-down"></i>
+          </a>
+          <ul>
+            <li>
+              <a href="#">Adultos</a>
+              <ul>
+                <li><a href="/RopaCaballeros.html">Caballeros</a></li>
+                <li><a href="/RopaDamas.html">Damas</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Infantil</a>
+              <ul>
+                <li><a href="/RopaNiños.html">Niños</a></li>
+                <li><a href="/RopaNiñas.html">Niñas</a></li>
+                <li><a href="/RopaBebés.html">Bebés</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="search-bar">
+          <form action="/productos.html" method="GET">
+            <input type="text" name="search" placeholder="Buscar" />
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </form>
+        </li>
+      </ul>
+      <ul class="navlist-right">
+        <li><a href="#login">Iniciar Sesión</a></li>
+        <li><a href="/registro.html" class="register">Regístrate</a></li>
+        <li>
+          <a href="#carrito"><i class="bx bxs-cart-alt" id="cart-icon"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <section class="hero" id="inicio">
+      <div class="main-text">
+        <h1>La mejor ropa a tu alcance</h1>
+        <p>
+          Calidad y estilo excepcionales a precios asequibles, todo en un solo
+          lugar.
+        </p>
+        <a href="/productos.html">Compra ya</a>
+      </div>
+    </section>
+
+    <section class="productos" id="productos-recomendados">
+      <h1 class="heading-productos">PRODUCTOS <span> RECOMENDADOS</span></h1>
+
+      <div class="productos-items">
+        <div class="productos-item">
+          <span class="descuento">-10%</span>
+          <div class="productos-img">
+            <img src="imagenesproy/polo1d.jpg" alt="" />
+            <div class="productos-icon">
+              <a href="#carrito" class="cart">Añadir al carrito</a>
+              <a href="#productos" class="bx bx-chevron-right" id="go"></a>
+            </div>
+          </div>
+          <div class="productos-info">
+            <h3>Polo de rayas negras</h3>
+            <div class="precio">S/22.49 <span>S/24.99</span></div>
+          </div>
+        </div>
+
+        <div class="productos-item">
+          <span class="descuento">-7%</span>
+          <div class="productos-img">
+            <img src="imagenesproy/casaca1c.jpg" alt="" />
+            <div class="productos-icon">
+              <a href="#carrito" class="cart">Añadir al carrito</a>
+              <a href="#productos" class="bx bx-chevron-right" id="go"></a>
+            </div>
+          </div>
+          <div class="productos-info">
+            <h3>Casaca negra</h3>
+            <div class="precio">S/69.74 <span>S/74.99</span></div>
+          </div>
+        </div>
+
+        <div class="productos-item">
+          <span class="descuento">-15%</span>
+          <div class="productos-img">
+            <img src="imagenesproy/polera1a.jpg" alt="" />
+            <div class="productos-icon">
+              <a href="#carrito" class="cart">Añadir al carrito</a>
+              <a href="#productos" class="bx bx-chevron-right" id="go"></a>
+            </div>
+          </div>
+          <div class="productos-info">
+            <h3>Polera amarilla</h3>
+            <div class="precio">S/80.74 <span>S/94.99</span></div>
+          </div>
+        </div>
+
+        <div class="productos-item">
+          <span class="descuento">-8%</span>
+          <div class="productos-img">
+            <img src="imagenesproy/chompa5o.jpg" alt="" />
+            <div class="productos-icon">
+              <a href="#carrito" class="cart">Añadir al carrito</a>
+              <a href="#productos" class="bx bx-chevron-right" id="go"></a>
+            </div>
+          </div>
+          <div class="productos-info">
+            <h3>Chompa dinosaurios</h3>
+            <div class="precio">S/86.47 <span>S/93.99</span></div>
+          </div>
+        </div>
+
+        <div class="productos-item">
+          <span class="descuento">-13%</span>
+          <div class="productos-img">
+            <img src="imagenesproy/conjunto5b.jpg" alt="" />
+            <div class="productos-icon">
+              <a href="#carrito" class="cart">Añadir al carrito</a>
+              <a href="#productos" class="bx bx-chevron-right" id="go"></a>
+            </div>
+          </div>
+          <div class="productos-info">
+            <h3>Conjunto camiones</h3>
+            <div class="precio">S/99.17 <span>S/113.99</span></div>
+          </div>
+        </div>
+
+        <div class="productos-item">
+          <span class="descuento">-5%</span>
+          <div class="productos-img">
+            <img src="imagenesproy/pijama2d.jpg" alt="" />
+            <div class="productos-icon">
+              <a href="#carrito" class="cart">Añadir al carrito</a>
+              <a href="#productos" class="bx bx-chevron-right" id="go"></a>
+            </div>
+          </div>
+          <div class="productos-info">
+            <h3>Pijama azul</h3>
+            <div class="precio">S/49.39 <span>S/51.99</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <div class="items">
+        <div class="img">
+          <img src="/imagenesproy/nosotros.png" alt="" />
+        </div>
+        <div class="info">
+          <h3>NOSOTROS</h3>
+          <p>
+            En un mundo cada vez más digitalizado, la presencia en línea se ha
+            convertido en un requisito esencial para el éxito comercial.
+            Ropalandia, una tienda de ropa ubicada en el corazón de Gamarra ha
+            enfrentado desafíos significativos en la atracción de clientes
+            debido a su ubicación periférica en la galería. A pesar de su
+            perseverancia durante más de un año, las ganancias de Ropalandia no
+            han alcanzado un punto de inflexión y, de hecho, han disminuido en
+            los últimos meses. Sin embargo, la solución a este desafío reside en
+            la convergencia de la tradición y la tecnología.
+          </p>
+          <p>
+            Para abordar estos desafíos, Ropalandia ha concebido una visión
+            ambiciosa: la creación de su propia página web de venta de ropa en
+            línea. Con esta iniciativa, la tienda busca llevar su catálogo de
+            moda a un público mucho más amplio y accesible. Al permitir que los
+            clientes exploren y compren sus productos desde la comodidad de sus
+            hogares, Ropalandia aspira a revitalizar su negocio y establecerse
+            como un competidor relevante en el mercado de la moda.
+          </p>
+          <a href="/informacion.html#historia">Aprender más</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="eligenos-titulo" id="por-que-elegirnos">
+      <h1 class="heading-eligenos">
+        <span>¿</span> POR QUÉ ELEGIRNOS <span>?</span>
+      </h1>
+    </section>
+
+    <section class="eligenos">
+      <div class="eligenos-item">
+        <div class="eligenos-info">
+          <i class="bx bx-trending-up"></i>
+          <h3>Tendencias Actuales</h3>
+          <p>
+            Mantenemos un dedo en el pulso de la moda actual para ofrecerte las
+            últimas tendencias y novedades en ropa y accesorios. Nuestro
+            catálogo se actualiza constantemente para que siempre encuentres
+            algo emocionante y a la moda.
+          </p>
+        </div>
+      </div>
+
+      <div class="eligenos-item">
+        <div class="eligenos-info">
+          <i class="bx bxs-t-shirt"></i>
+          <h3>Variedad de Estilos</h3>
+          <p>
+            Sabemos que cada persona tiene su propio estilo. Por eso, ofrecemos
+            una amplia variedad de estilos que van desde lo clásico y elegante
+            hasta lo moderno y vanguardista. Sea cual sea tu gusto, tenemos algo
+            para ti.
+          </p>
+        </div>
+      </div>
+
+      <div class="eligenos-item">
+        <div class="eligenos-info">
+          <i class="bx bx-check-double"></i>
+          <h3>Calidad Premium</h3>
+          <p>
+            Nos enorgullece ofrecer ropa de alta calidad que combina estilo y
+            comodidad. Trabajamos con marcas de renombre y seleccionamos
+            cuidadosamente cada prenda para garantizar la satisfacción de
+            nuestros clientes.
+          </p>
+        </div>
+      </div>
+
+      <div class="eligenos-item">
+        <div class="eligenos-info">
+          <i class="bx bxs-shopping-bag"></i>
+          <h3>Facilidad de Compra</h3>
+          <p>
+            Nuestra plataforma de compras en línea es fácil de usar y segura.
+            Puedes navegar por categorías y realizar pedidos con total
+            confianza.
+          </p>
+        </div>
+      </div>
+
+      <div class="eligenos-item">
+        <div class="eligenos-info">
+          <i class="bx bxs-package"></i>
+          <h3>Envío Rápido y Confiable</h3>
+          <p>
+            Entendemos que quieres disfrutar de tu ropa nueva lo antes posible.
+            Por eso, ofrecemos opciones de envío rápido y confiable para que tus
+            compras lleguen a tu puerta en tiempo récord.
+          </p>
+        </div>
+      </div>
+
+      <div class="eligenos-item">
+        <div class="eligenos-info">
+          <i class="bx bxs-user"></i>
+          <h3>Atención al Cliente Personalizada</h3>
+          <p>
+            Nuestro equipo de atención al cliente está siempre dispuesto a
+            ayudarte. Si tienes preguntas o necesitas asistencia, estamos aquí
+            para brindarte un servicio amable y atento mediante llamadas o
+            mensajes a través de medio WhatsApp.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonios" id="testimonios">
+      <h1 class="heading-testimonios">TESTIMONIOS</h1>
+
+      <div class="items">
+        <div class="item">
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            ¡Increíble experiencia en la web app de Ropalandia! Compré ropa de
+            alta calidad a precios inimaginables desde casa. La aplicación es
+            fácil de usar, y el personal en línea me ayudó. ¡Recomiendo usar la
+            web app de Ropalandia para una compra conveniente y asequible!
+          </p>
+          <div class="cliente">
+            <img src="/imagenesproy/user1.png" alt="" />
+            <div class="cliente-info">
+              <h3>Juan Carlos</h3>
+              <span>Cliente satisfecho</span>
+            </div>
+          </div>
+          <span class="bx bxs-quote-right"></span>
+        </div>
+
+        <div class="item">
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            Mis amigas me recomendaron Ropalandia y no me decepcionó. Encontré
+            una variedad increíble de estilos y tallas en ropa y accesorios. El
+            lugar tiene un ambiente vibrante y lleno de energía. ¡Una
+            experiencia de compras genial!
+          </p>
+          <div class="cliente">
+            <img src="/imagenesproy/user2.png" alt="" />
+            <div class="cliente-info">
+              <h3>Josefina</h3>
+              <span>Cliente satisfecha</span>
+            </div>
+          </div>
+          <span class="bx bxs-quote-right"></span>
+        </div>
+
+        <div class="item">
+          <div class="estrellas">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            Mi visita a Ropalandia fue un éxito total. Encontré trajes elegantes
+            y casuales que se ajustaban perfectamente a mi estilo. La diversidad
+            de tiendas es asombrosa, y los precios son inmejorables.
+            ¡Definitivamente volveré para hacer más compras!
+          </p>
+          <div class="cliente">
+            <img src="/imagenesproy/user3.png" alt="" />
+            <div class="cliente-info">
+              <h3>Alberto</h3>
+              <span>Cliente satisfecho</span>
+            </div>
+          </div>
+          <span class="bx bxs-quote-right"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contactar" id="contactanos">
+      <div class="form">
+        <div class="fila">
+          <form action="">
+            <h1 class="heading-contactar">CONTÁCTANOS</h1>
+            <input type="text" placeholder="Nombre" class="item" />
+            <input type="email" placeholder="Email" class="item" />
+            <input type="number" placeholder="Número" class="item" />
+            <textarea
+              name=""
+              class="item"
+              placeholder="Mensaje"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Enviar mensaje" class="submit-form" />
+          </form>
+          <div class="icon">
+            <i class="bx bxs-envelope"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <div class="items">
+      <div class="item">
+        <h3>Acceso rápido</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos-recomendados">Productos Recomendados</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#por-que-elegirnos">Por qué elegirnos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contactanos">Contáctanos</a>
+      </div>
+
+      <div class="item">
+        <h3>Más información</h3>
+        <a href="/informacion.html#envio">Información de envío</a>
+        <a href="/informacion.html#faq">Preguntas Frecuentes</a>
+        <a href="/informacion.html#historia">Nuestra historia</a>
+        <a href="/informacion.html#privacy-policy">Políticas de Privacidad</a>
+        <a href="/informacion.html#terms-of-service">Términos y Condiciones</a>
+      </div>
+
+      <div class="item">
+        <h3>Contacto</h3>
+        <a>+51 961 986 343</a>
+        <a>+51 992 240 242</a>
+        <a>+51 929 940 397</a>
+        <a>+01 329 5739</a>
+        <a>+01 329 5739</a>
+        <a>ropalandia@gmail.com</a>
+        <a>Av. Comercio 456, Gamarra, La Victoria, Lima, Peru</a>
+      </div>
+    </div>
+
+    <div class="creditos">
+      Creado por <span>Grupo 7</span> | Todos los Derechos Reservados ©
+    </div>
+  </footer>
+</html>

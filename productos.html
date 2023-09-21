@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+    <link rel="icon" type="x-icon" href="imagenesproy/logo.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <header>
+    <nav>
+      <a href="/index.html" class="logo">Ropalandia</a>
+      <ul class="navlist-mid">
+        <li><a href="/productos.html">Ver Productos</a></li>
+        <li>
+          <a href="#categorias">
+            Categorías
+            <i class="bx bx-chevron-down"></i>
+          </a>
+          <ul>
+            <li>
+              <a href="#">Adultos</a>
+              <ul>
+                <li><a href="/RopaCaballeros.html">Caballeros</a></li>
+                <li><a href="/RopaDamas.html">Damas</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Infantil</a>
+              <ul>
+                <li><a href="/RopaNiños.html">Niños</a></li>
+                <li><a href="/RopaNiñas.html">Niñas</a></li>
+                <li><a href="/RopaBebés.html">Bebés</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="search-bar">
+          <form action="/productos.html" method="GET">
+            <input type="text" name="search" placeholder="Buscar" />
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </form>
+        </li>
+      </ul>
+      <ul class="navlist-right">
+        <li><a href="#login">Iniciar Sesión</a></li>
+        <li><a href="/registro.html" class="register">Regístrate</a></li>
+        <li>
+          <a href="#carrito"><i class="bx bxs-cart-alt" id="cart-icon"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <section class="main-products">
+      <div class="layout">
+        <div class="side-menu">
+          <div class="filters">
+            <h3>Filtrar por</h3>
+          </div>
+          <div class="categories">
+            <h1>Categorías</h1>
+            <ul>
+              <li><a href="#">Blusas</a></li>
+              <li><a href="#">Camisas</a></li>
+              <li><a href="#">Casacas</a></li>
+              <li><a href="#">Chompas</a></li>
+              <li><a href="#">Conjuntos (bebés)</a></li>
+              <li><a href="#">Jeans</a></li>
+              <li><a href="#">Pantalones</a></li>
+              <li><a href="#">Pijamas</a></li>
+              <li><a href="#">Poleras</a></li>
+              <li><a href="#">Polos</a></li>
+              <li><a href="#">Vestidos</a></li>
+            </ul>
+          </div>
+          <form action="/productos.html" method="GET">
+            <div class="filter-options">
+              <h1>Filtros</h1>
+              <p>Edad</p>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="edadAdultos"
+                    name="edad"
+                    value="Adultos"
+                  /><label for="edadAdultos">Adultos</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="edadInfantiles"
+                    name="edad"
+                    value="Infantiles"
+                  /><label for="edadInfantiles">Infantiles</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="edadBebes"
+                    name="edad"
+                    value="Bebés"
+                  /><label for="edadBebes">Bebés</label>
+                </li>
+              </ul>
+              <p>Género</p>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="generoMasculino"
+                    name="genero"
+                    value="Masculino"
+                  /><label for="generoMasculino">Masculino</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="generoFemenino"
+                    name="genero"
+                    value="Femenino"
+                  /><label for="generoFemenino">Femenino</label>
+                </li>
+              </ul>
+              <p>Talla</p>
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio3M"
+                    name="tamanio"
+                    value="3M"
+                  /><label for="tamanio3M">3M</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio6M"
+                    name="tamanio"
+                    value="6M"
+                  /><label for="tamanio6M">6M</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio9M"
+                    name="tamanio"
+                    value="9M"
+                  /><label for="tamanio9M">9M</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio12M"
+                    name="tamanio"
+                    value="12M"
+                  /><label for="tamanio12M">12M</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio2"
+                    name="tamanio"
+                    value="2"
+                  /><label for="tamanio2">2</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio4"
+                    name="tamanio"
+                    value="4"
+                  /><label for="tamanio4">4</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio6"
+                    name="tamanio"
+                    value="6"
+                  /><label for="tamanio6">6</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanio8"
+                    name="tamanio"
+                    value="8"
+                  /><label for="tamanio8">8</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanioS"
+                    name="tamanio"
+                    value="S"
+                  /><label for="tamanioS">S</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanioM"
+                    name="tamanio"
+                    value="M"
+                  /><label for="tamanioM">M</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanioL"
+                    name="tamanio"
+                    value="L"
+                  /><label for="tamanioL">L</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="tamanioXL"
+                    name="tamanio"
+                    value="XL"
+                  /><label for="tamanioXL">XL</label>
+                </li>
+              </ul>
+              <p>Precio</p>
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    id="precio10"
+                    name="precio"
+                    value="menor_a_10"
+                  /><label for="precio10">Menor a S/10</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="precio30"
+                    name="precio"
+                    value="menor_a_30"
+                  /><label for="precio30">Menor a S/30</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="precio50"
+                    name="precio"
+                    value="menor_a_50"
+                  /><label for="precio50">Menor a S/50</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="precio100"
+                    name="precio"
+                    value="menor_a_100"
+                  /><label for="precio100">Menor a S/100</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="precio200"
+                    name="precio"
+                    value="menor_a_200"
+                  /><label for="precio200">Menor a S/200</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="precio200mas"
+                    name="precio"
+                    value="200_a_mas"
+                  /><label for="precio200mas">S/200 a más</label>
+                </li>
+              </ul>
+            </div>
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
+        <div class="products-body">
+          <div class="order-by">
+            <div class="left">
+              <p>Se han encontrado X resultados para "Buscar"</p>
+            </div>
+            <div class="right">
+              <p>Ascendente<i class="bx bx-up-arrow-alt"></i></p>
+              <div class="dropdown">
+                <h3 tabindex="0">
+                  Ordenar por<i class="bx bx-chevron-down"></i>
+                </h3>
+                <ul>
+                  <li><a href="#">Agregados recientemente</a></li>
+                  <li><a href="#">Más vendidos</a></li>
+                  <li><a href="#">Más valorados</a></li>
+                  <li><a href="#">Mejor precio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <ul>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/blusa1d.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/blusa2d.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/blusa3d.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/blusa4d.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/blusa5d.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/blusa6d.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/camisa1c.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <img src="/imagenesproy/camisa2c.jpg" width="256px" height="256px" alt="" />
+                  <h1>Blusa manga corta</h1>
+                  <h2>S/32.00</h2>
+                  <a class="cart" href="#carrito">Añadir al carrito</a>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <div class="items">
+      <div class="item">
+        <h3>Acceso rápido</h3>
+        <a href="/index.html#inicio">Inicio</a>
+        <a href="/index.html#productos-recomendados">Productos Recomendados</a>
+        <a href="/index.html#nosotros">Nosotros</a>
+        <a href="/index.html#por-que-elegirnos">Por qué elegirnos</a>
+        <a href="/index.html#testimonios">Testimonios</a>
+        <a href="/index.html#contactanos">Contáctanos</a>
+      </div>
+
+      <div class="item">
+        <h3>Más información</h3>
+        <a href="/informacion.html#envio">Información de envío</a>
+        <a href="/informacion.html#faq">Preguntas Frecuentes</a>
+        <a href="/informacion.html#historia">Nuestra historia</a>
+        <a href="/informacion.html#privacy-policy">Políticas de Privacidad</a>
+        <a href="/informacion.html#terms-of-service">Términos y Condiciones</a>
+      </div>
+
+      <div class="item">
+        <h3>Contacto</h3>
+        <a>+51 961 986 343</a>
+        <a>+51 992 240 242</a>
+        <a>+51 929 940 397</a>
+        <a>+01 329 5739</a>
+        <a>+01 329 5739</a>
+        <a>ropalandia@gmail.com</a>
+        <a>Av. Comercio 456, Gamarra, La Victoria, Lima, Peru</a>
+      </div>
+    </div>
+
+    <div class="creditos">
+      Creado por <span>Grupo 7</span> | Todos los Derechos Reservados ©
+    </div>
+  </footer>
+</html>

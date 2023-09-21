@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regístrate</title>
+    <link rel="icon" type="x-icon" href="imagenesproy/logo.ico" />
+    <link rel="stylesheet" href="css/register-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="items">
+      <div class="form">
+        <form class="registro-datos" id="FormRegistro">
+          <br />
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="txtfield"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+
+          <label for="correo">Correo Electrónico</label>
+          <input
+            type="email"
+            class="txtfield"
+            name="correo"
+            id="correo"
+            placeholder="Ingresa tu Correo Electrónico"
+            required
+          />
+
+          <label for="contrasena">Contraseña</label>
+          <input
+            type="password"
+            id="contrasena"
+            name="contraseña"
+            class="txtfield"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+          <ul>
+            <li>*Al menos 1 número</li>
+            <li>*Ningún espacio</li>
+            <li>*Mínimo 8 carácteres</li>
+            <li>*1 minúscula</li>
+            <li>*1 mayúscula</li>
+          </ul>
+
+          <label for="documento">Tipo de Documento</label>
+          <br />
+          <select id="comboBoxDocumento">
+            <option>DNI</option>
+            <option>Pasaporte</option>
+            <option>Cédula de identidad</option>
+          </select>
+          <input
+            type="text"
+            name="documento"
+            class="txtfield"
+            id="documento"
+            placeholder="Ingresar N° de Documento"
+            required
+          />
+
+          <label for="numero">Número</label>
+          <div class="number">
+            <span>+51</span>
+            <input
+              type="text"
+              name="numero"
+              id="numero"
+              class="txtfield"
+              placeholder="Ingresa tu número de celular"
+              required
+            />
+          </div>
+
+          <label for="ropaopciones">¿Qué estás buscando?</label>
+          <br />
+          <select id="comboBoxRopaopciones">
+            <option>Ropa para Damas</option>
+            <option>Ropa para Caballeros</option>
+            <option>Ropa para Niñas</option>
+            <option>Ropa para Niños</option>
+            <option>Ropa para Bebés</option>
+          </select>
+
+          <div class="terminosycondiciones">
+            <p>
+              <input type="checkbox" required />Acepto los
+              <a class="acondiciones" href="informacion.html#terms-of-service">
+                Términos y Condiciones
+              </a>
+              de Ropalandia y estoy de acuerdo con la
+              <a class="aprivacidad" href="informacion.html#privacy-policy">
+                Pólitica de Privacidad
+              </a>
+            </p>
+            <p>
+              <input type="checkbox" required />Autorizo a Ropalandia a enviar
+              promociones a mi correo electrónico
+            </p>
+          </div>
+
+          <div class="register-box">
+            <br><br>
+            <a class="register" href="/index.html">Registrarse</a>
+          </div>
+
+          <div class="TengoCuenta">
+            <p>
+              ¿Ya tienes cuenta?
+              <a href="/login.html">Inicia sesión aquí</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="benefits">
+        <div class="logo">
+          <img src="/imagenesproy/logo.jpg" alt="" width="250px" height="250px">
+        </div>
+        <ul>
+          <li>
+            <img
+              src="imgregistrate/camionicon.jpg"
+              class="icon"
+              width="80px"
+              height="80px"
+            />
+            <p>
+              Hacer seguimiento de tus compras.<br />
+              Puedes ingresar a tu cuenta y ver el progreso de tu orden.
+            </p>
+          </li>
+          <li>
+            <img
+              src="imgregistrate/celularicon.jpg"
+              class="icon"
+              width="80px"
+              height="80px"
+            />
+            <p>
+              Recibir notificaciones en tiempo real sobre el estado de tu
+              compra.
+            </p>
+          </li>
+          <li>
+            <img
+              src="imgregistrate/impresoraicon.jpg"
+              class="icon"
+              width="80px"
+              height="80px"
+            />
+            <p>Imprimir tus boletas o tickets de cambio.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <div class="items">
+      <div class="item">
+        <h3>Acceso rápido</h3>
+        <a href="/index.html#inicio">Inicio</a>
+        <a href="/index.html#productos-recomendados">Productos Recomendados</a>
+        <a href="/index.html#nosotros">Nosotros</a>
+        <a href="/index.html#por-que-elegirnos">Por qué elegirnos</a>
+        <a href="/index.html#testimonios">Testimonios</a>
+        <a href="/index.html#contactanos">Contáctanos</a>
+      </div>
+
+      <div class="item">
+        <h3>Más información</h3>
+        <a href="/informacion.html#envio">Información de envío</a>
+        <a href="/informacion.html#faq">Preguntas Frecuentes</a>
+        <a href="/informacion.html#historia">Nuestra historia</a>
+        <a href="/informacion.html#privacy-policy">Políticas de Privacidad</a>
+        <a href="/informacion.html#terms-of-service">Términos y Condiciones</a>
+      </div>
+
+      <div class="item">
+        <h3>Contacto</h3>
+        <a>+51 961 986 343</a>
+        <a>+51 992 240 242</a>
+        <a>+51 929 940 397</a>
+        <a>+01 329 5739</a>
+        <a>+01 329 5739</a>
+        <a>ropalandia@gmail.com</a>
+        <a>Av. Comercio 456, Gamarra, La Victoria, Lima, Peru</a>
+      </div>
+    </div>
+
+    <div class="creditos">
+      Creado por <span>Grupo 7</span> | Todos los Derechos Reservados ©
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffe8cf;
+}
+
+.form {
+  box-shadow: 1rem 2rem 2.5rem rgba(0, 0, 0, 0.3);
+  margin: 7rem auto;
+  padding: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  width: 500px;
+  background: #ffd3a7;
+}
+
+.form .logo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form .registro-datos label {
+  font-weight: 900;
+  color: #4b3020;
+  font-size: 1.3rem;
+}
+
+.form .txtfield {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 2px solid #c7c7c7;
+}
+
+.form .login-box {
+  text-align: center;
+}
+
+.form .login-box .login {
+  font-weight: 900;
+  padding: 12px 30px;
+  color: #fff;
+  background: #f36d00;
+  border-radius: 30px;
+  font-size: 15px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  width: 180px;
+  text-align: center;
+  margin-top: 16rem;
+}
+
+.form .login-box .login:hover {
+  background: #8c4109;
+}
+
+.footer {
+    background: #4e2406;
+    padding: 2rem 10%;
+    align-items: center;
+  }
+  
+  .footer .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 0rem 3rem;
+  }
+  
+  .footer .items .item {
+    flex: 1 1 25rem;
+  }
+  
+  .footer .items .item h3 {
+    color: #ffd391;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+  
+  .footer .items .item a {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .footer .items .item a:hover {
+    color: #f7d61d;
+    text-decoration: underline;
+  }
+  
+  .footer .creditos {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #c4c4c4;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .footer .creditos span {
+    color: #ff9900;
+  }
+  
